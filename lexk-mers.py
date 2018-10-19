@@ -1,8 +1,5 @@
 import itertools as it
 
-perms = list(it.product('ABCDE','ABCDE'))
-perms = sorted(perms)
-for k in perms:
-    print(''.join(k))
-
-
+prod = list(it.product('ABCDEFG', repeat=3))
+for value in prod:
+	print(''.join(value))
